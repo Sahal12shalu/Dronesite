@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MK STR Nano 4K Drone. Ultra Lightweight. Cinematic Power.">
+  <title>MK STR Nano 4K Drone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Fixed Glass Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">MK STR</div>
+    <div class="nav-links">
+      <a href="#hero">Overview</a>
+      <a href="#static-content">Features</a>
+    </div>
+  </nav>
+
+  <!-- Space Background Particles -->
+  <div id="stars-container" class="stars"></div>
+
+  <!-- HERO SECTION (200vh) -->
+  <section id="hero" class="hero">
+    <!-- Sticky Container for Canvas and Texts -->
+    <div class="hero-sticky">
+      <!-- Top Left Label -->
+      <div class="hero-top-left-about">
+        <strong>About the Drone</strong><br>
+        The MK STR Nano 4K delivers cinematic power in a ultra-lightweight frame meant for all levels.
+      </div>
+
+      <!-- Bottom Right Info -->
+      <div class="hero-bottom-right-info">
+        <strong>Cinematic Capability</strong><br>
+        Equipped with a 3-axis gimbal and advanced smart flight tracking for perfect aerial shots.
+      </div>
+
+      <!-- Image Sequence Canvas -->
+      <canvas id="hero-canvas"></canvas>
+
+      <!-- Text Screen 1: Intro -->
+      <div id="screen-1" class="hero-text-container screen-active">
+        <h1 class="headline main-title">MK STR Nano 4K Drone</h1>
+        <p class="subtitle main-sub">Ultra Lightweight. Cinematic Power.</p>
+      </div>
+
+      <!-- Text Screen 2: Split / Internal -->
+      <div id="screen-2" class="hero-text-container">
+        <h2 class="headline">Engineered for Precision</h2>
+        <p class="subtitle">3-Axis Gimbal &bull; 4K Camera &bull; Smart Sensors</p>
+      </div>
+
+      <!-- Text Screen 3: Reassemble / Final -->
+      <div id="screen-3" class="hero-text-container">
+        <h2 class="headline">Fly Beyond Limits</h2>
+        <p class="subtitle">93 Minutes Flight &bull; 4KM Range &bull; GPS Control</p>
+      </div>
+
+      <!-- Fade Out Overlay -->
+      <div class="hero-fade-bottom"></div>
+    </div>
+  </section>
+
+  <!-- CONTENT BELOW HERO -->
+  <main id="static-content">
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- FEATURES HEADLINE -->
+    <div class="features-header-container fm-fade-up">
+      <h2 class="features-main-headline">FEATURES</h2>
+    </div>
+
+    <!-- SECTION 1: Feature Highlight -->
+    <section id="section-feature" class="content-block two-col">
+      <div class="col img-col fm-slide-left">
+        <!-- Using frame 120 as a placeholder for the split/feature view -->
+        <img src="images/bg remove/Whisk_16bdbd53cd152cd809046bdbb5aead57dr-removebg-preview.png"
+          alt="4K Camera Feature">
+      </div>
+      <div class="col text-col fm-fade-up">
+        <h2 class="attractive-headline">4K UHD Camera</h2>
+        <br><br>
+        <p>Capture stunning aerial shots with 20MP clarity and ultra-wide lens.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Performance -->
+    <section id="section-performance" class="content-block two-col">
+      <div class="col text-col fm-fade-up staggered">
+        <h2 class="attractive-headline">Extended Flight Time</h2>
+        <br><br>
+        <p>Up to 93 minutes with 3 smart batteries and fast charging hub.</p>
+
+        <!-- Product Specs Information -->
+        <div class="specs-table">
+          <div class="spec-row"><span>Brand Name</span><span>Generic</span></div>
+          <div class="spec-row"><span>Model Name</span><span>E-88 Drone-15</span></div>
+          <div class="spec-row"><span>Age Range</span><span>Adult, Teen</span></div>
+          <div class="spec-row"><span>Included Components</span><span>1 charging cable, 1 drone, Remote Control</span>
+          </div>
+          <div class="spec-row"><span>Manufacturer</span><span>Generic</span></div>
+          <div class="spec-row"><span>Part Number</span><span>E-88 Drone-15</span></div>
+          <div class="spec-row"><span>Unit Count</span><span>1 Count</span></div>
+          <div class="spec-row"><span>Country of Origin</span><span>China</span></div>
+        </div>
+      </div>
+      <div class="col img-col fm-zoom-in">
+        <!-- Using frame 240 as a sleek final view -->
+        <img src="images/bg remove/ezgif-frame-224-removebg-preview.png" alt="Flight Performance">
+      </div>
+    </section>
+
+    <!-- SECTION 3: Control & Safety Cards -->
+    <section id="section-safety" class="content-block center-aligned fm-fade-up dark-gradient">
+      <div class="container" style="max-width: 1200px;">
+        <h2 class="attractive-headline">Smart Flight AI</h2>
+        <br><br>
+        <p class="subtitle" style="margin-bottom: 3rem;">Auto return, stable flight, and beginner-friendly maneuvering.
+        </p>
+
+        <div class="card-grid">
+          <div class="feature-card fm-fade-up">
+            <h3>Auto Return</h3>
+            <p>GPS-assisted return home automatically prevents loss or low-battery crashes.</p>
+          </div>
+          <div class="feature-card fm-fade-up">
+            <h3>Follow Me Tracking</h3>
+            <p>Advanced visual AI keeps you dead center dynamically as you move through space.</p>
+          </div>
+          <div class="feature-card fm-fade-up">
+            <h3>Waypoint Map</h3>
+            <p>Map your cinematic route with pins, and watch the drone execute it flawlessly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <hr class="footer-divider">
+
+  <!-- Minimal Dark Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="brand">GENERIC</div>
+      <div class="links">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="copy">
+        &copy; 2026 Generic Drone Corp. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Import Framer Motion DOM Inline to support local file:// loading securely without external script modules -->
+  <script type="module">
+    import { animate, scroll, inView } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+
+    // --- 1. Starfield Particles ---
+    const starsContainer = document.getElementById("stars-container");
+    for (let i = 0; i < 150; i++) {
+      const star = document.createElement("div");
+      const size = Math.random() * 3;
+      star.style.position = "absolute";
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.background = "white";
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 200}vh`;
+      star.style.borderRadius = "50%";
+      star.style.opacity = Math.random();
+      starsContainer.appendChild(star);
+    }
+
+    // Parallax the stars slightly on scroll via Framer Motion
+    scroll(
+      animate(starsContainer, { y: ["0vh", "-30vh"] }),
+      { target: document.getElementById("hero"), offset: ["start start", "end start"] }
+    );
+
+    // --- 2. Canvas Image Sequence Loader (Apple Style) ---
+    const canvas = document.getElementById("hero-canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 240;
+    const images = [];
+    let imagesLoaded = 0;
+
+    for (let i = 1; i <= frameCount; i++) {
+      const img = new Image();
+      const indexStr = i.toString().padStart(3, '0');
+      img.src = `images/drone/ezgif-frame-${indexStr}.png`;
+
+      img.onload = () => {
+        imagesLoaded++;
+        if (i === 1) {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        }
+      };
+
+      images.push(img);
+    }
+
+    // Scrub logic: Calculate manual scroll progress to paint canvas
+    window.addEventListener("scroll", () => {
+      const hero = document.getElementById("hero");
+      const maxScroll = hero.offsetHeight - window.innerHeight;
+      const currentScroll = window.scrollY - hero.offsetTop;
+
+      let progress = currentScroll / maxScroll;
+      if (progress < 0) progress = 0;
+      if (progress > 1) progress = 1;
+
+      const frameIndex = Math.floor(progress * (frameCount - 1));
+
+      if (images[frameIndex] && images[frameIndex].complete) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(images[frameIndex], 0, 0, canvas.width, canvas.height);
+      }
+    });
+
+    // --- 3. Framer Motion Scroll Texts (Hero) ---
+    scroll(
+      animate("#screen-1", {
+        opacity: [1, 1, 0],
+        y: [0, -50, -100]
+      }),
+      { target: document.getElementById("hero"), offset: ["start start", "33% start"] }
+    );
+
+    scroll(
+      animate("#screen-2", {
+        opacity: [0, 1, 1, 0],
+        scale: [0.9, 1, 1, 1.1]
+      }),
+      { target: document.getElementById("hero"), offset: ["20% start", "80% start"] }
+    );
+
+    scroll(
+      animate("#screen-3", {
+        opacity: [0, 1, 1],
+        y: [50, 0, 0]
+      }),
+      { target: document.getElementById("hero"), offset: ["66% start", "end start"] }
+    );
+
+    // --- 4. Framer Motion Element Reveal Animations ---
+    inView(".fm-slide-left", (info) => {
+      animate(info.target, {
+        x: [-100, 0],
+        opacity: [0, 1]
+      }, {
+        duration: 0.8,
+        easing: "easeOut"
+      });
+    });
+
+    document.querySelectorAll(".fm-fade-up").forEach((el, i) => {
+      inView(el, (info) => {
+        animate(info.target, {
+          y: [60, 0],
+          opacity: [0, 1]
+        }, {
+          duration: 0.8,
+          delay: i * 0.1,
+          easing: "easeOut"
+        });
+      });
+    });
+
+    inView(".fm-zoom-in", (info) => {
+      animate(info.target, {
+        scale: [0.8, 1],
+        opacity: [0, 1]
+      }, {
+        duration: 0.8,
+        easing: "easeOut"
+      });
+    });
+
+    document.querySelectorAll(".fm-float").forEach(el => {
+      animate(el, {
+        y: [-15, 15]
+      }, {
+        duration: 2.5,
+        repeat: Infinity,
+        direction: "alternate",
+        easing: "easeInOut"
+      });
+    });
+
+    // --- 5. Content Background Particles (Swapping dots / network) ---
+    const bgCanvas = document.getElementById("bg-canvas");
+    const bgCtx = bgCanvas.getContext("2d");
+
+    let bgWidth, bgHeight;
+    function resizeBg() {
+      bgWidth = bgCanvas.offsetWidth;
+      bgHeight = bgCanvas.offsetHeight;
+      bgCanvas.width = bgWidth;
+      bgCanvas.height = bgHeight;
+    }
+    window.addEventListener("resize", resizeBg);
+    setTimeout(resizeBg, 300); // give time for images to load height
+
+    const dots = [];
+    const numDots = 80;
+
+    for (let i = 0; i < numDots; i++) {
+      dots.push({
+        x: Math.random() * (window.innerWidth || 1920), 
+        y: Math.random() * 4000, // roughly cover content height
+        vx: (Math.random() - 0.5) * 0.8,
+        vy: (Math.random() - 0.5) * 0.8,
+        size: Math.random() * 1.5 + 0.5
+      });
+    }
+
+    function animateBg() {
+      requestAnimationFrame(animateBg);
+      if (!bgWidth || !bgHeight) return;
+
+      bgCtx.clearRect(0, 0, bgWidth, bgHeight);
+
+      bgCtx.fillStyle = "rgba(255, 255, 255, 0.7)";
+      for (let i = 0; i < numDots; i++) {
+        const dot = dots[i];
+        dot.x += dot.vx;
+        dot.y += dot.vy;
+
+        // Wrap around bounds
+        if (dot.x < 0) dot.x = bgWidth;
+        if (dot.x > bgWidth) dot.x = 0;
+        if (dot.y < 0) dot.y = bgHeight;
+        if (dot.y > bgHeight) dot.y = 0;
+
+        bgCtx.beginPath();
+        bgCtx.arc(dot.x, dot.y, dot.size, 0, Math.PI * 2);
+        bgCtx.fill();
+        
+        // Connect nearby dots
+        for (let j = i + 1; j < numDots; j++) {
+          const dot2 = dots[j];
+          const dx = dot.x - dot2.x;
+          const dy = dot.y - dot2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          
+          if (dist < 120) {
+            bgCtx.lineWidth = 0.5;
+            bgCtx.strokeStyle = `rgba(255, 255, 255, ${0.2 * (1 - dist / 120)})`;
+            bgCtx.beginPath();
+            bgCtx.moveTo(dot.x, dot.y);
+            bgCtx.lineTo(dot2.x, dot2.y);
+            bgCtx.stroke();
+          }
+        }
+      }
+    }
+    // Start animation loop
+    animateBg();
+  </script>
+</body>
+
+</html>
