@@ -15,7 +15,8 @@
   <!-- Fixed Glass Navbar -->
   <nav class="navbar">
     <div class="nav-brand">MK STR</div>
-    <div class="nav-links">
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <div class="nav-links" id="nav-links">
       <a href="#hero">Overview</a>
       <a href="#static-content">Features</a>
     </div>
@@ -242,7 +243,7 @@
     scroll(
       animate("#screen-2", {
         opacity: [0, 1, 1, 0],
-        scale: [0.9, 1, 1, 1.1]
+        scale: [0.9, 1, 1, 1]
       }),
       { target: document.getElementById("hero"), offset: ["20% start", "80% start"] }
     );
@@ -369,6 +370,23 @@
     }
     // Start animation loop
     animateBg();
+
+    // --- 6. Mobile Navbar Interaction ---
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuIcon && navLinks) {
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Close menu when clicking a link
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
   </script>
 </body>
 
